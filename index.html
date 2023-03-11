@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Card</title>
+    <!-- FONT GOOGLE -->
+    <link href="https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&display=swap" rel="stylesheet">
+    <!-- BOOTSTRAP  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <header id="game-name">
+        <h1>MEMORY GAME</h1>
+    </header>
+    <section id="game-start">
+        <!-- onblur="this.size=0;" -->
+        <div class="game-left">
+            <h3> <img src="./image/click.png" alt=""> Choose the level </h3>
+            <div class="game-level_select">
+                <select id="level-option" onfocus="this.size=3;" onchange="this.size=1; this.blur();">
+                    <option value="2">4 Cards</option>
+                    <option value="4">8 Cards</option>
+                    <option value="6">12 Cards</option>
+                </select>
+                <select id="time-option">
+                    <option value="5">Easy</option>
+                    <option value="4">Medium</option>
+                    <option value="3">Hard</option>
+
+                </select>
+            </div>
+            <button id="btn-start-game">START GAME</button>
+        </div>
+
+    </section>
+
+    <section id="game-in">
+        <div class="game-left">
+            <div class="step">
+                <img src="./image/footprints.png" alt="foot">
+                <h4 id="step">0 moves</h4>
+            </div>
+            <div class="time">
+                <img src="./image/alarm.png" alt="clock">
+                <h4 id="time">00:00</h4>
+            </div>
+            <div class="score">
+
+            </div>
+        </div>
+
+        <div class="game-container">
+            <div class="memory-card">
+                <div class="card-img">
+                    <img class="card-front" src="./image/card_1.png" alt="1">
+                    <img class="card-back" src="./image/card.png" alt="card-back">
+                </div>
+                <div class="card-img">
+                    <img class="card-front" src="./image/card_2.png" alt="2">
+                    <img class="card-back" src="./image/card.png" alt="card-back">
+                </div>
+                <div class="card-img">
+                    <img class="card-front" src="./image/card_3.png" alt="3">
+                    <img class="card-back" src="./image/card.png" alt="card-back">
+                </div>
+                <div class="card-img">
+                    <img class="card-front" src="./image/card_4.png" alt="4">
+                    <img class="card-back" src="./image/card.png" alt="card-back">
+                </div>
+                <div class="card-img">
+                    <img class="card-front" src="./image/card_5.png" alt="5">
+                    <img class="card-back" src="./image/card.png" alt="card-back">
+                </div>
+                <div class="card-img">
+                    <img class="card-front" src="./image/card_6.png" alt="6">
+                    <img class="card-back" src="./image/card.png" alt="card-back">
+                </div>
+                <div class="card-img">
+                    <img class="card-front" src="./image/card_7.png" alt="7">
+                    <img class="card-back" src="./image/card.png" alt="card-back">
+                </div>
+                <div class="card-img">
+                    <img class="card-front" src="./image/card_8.png" alt="8">
+                    <img class="card-back" src="./image/card.png" alt="card-back">
+                </div>
+
+                <div class="card-img">
+                    <img class="card-front" src="./image/card_9.png" alt="9">
+                    <img class="card-back" src="./image/card.png" alt="card-back">
+                </div>
+                <div class="card-img">
+                    <img class="card-front" src="./image/card_9.png" alt="9">
+                    <img class="card-back" src="./image/card.png" alt="card-back">
+                </div>
+                <div class="card-img">
+                    <img class="card-front" src="./image/card_9.png" alt="9">
+                    <img class="card-back" src="./image/card.png" alt="card-back">
+                </div>
+                <div class="card-img">
+                    <img class="card-front" src="./image/card_9.png" alt="9">
+                    <img class="card-back" src="./image/card.png" alt="card-back">
+                </div>
+                <div class="card-img">
+                    <img class="card-front" src="./image/card_10.png" alt="10">
+                    <img class="card-back" src="./image/card.png" alt="card-back">
+                </div>
+                <div class="card-img">
+                    <img class="card-front" src="./image/card_11.png" alt="11">
+                    <img class="card-back" src="./image/card.png" alt="card-back">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- END GAME  -->
+    <section id="game-end">
+        <div>
+            <h2 class="result"> </h2>
+            <div> <button id="btn-game-again">PLAY AGAIN</button>
+                <button id="btn-quit-game">QUIT GAME</button>
+            </div>
+        </div>
+
+    </section>
+    <footer></footer>
+    <!-- JS  -->
+    <script src="./app.js"></script>
+
+
+
+</body>
+
+</html>

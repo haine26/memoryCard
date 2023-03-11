@@ -1,0 +1,143 @@
+* {
+    font-family: "Skranji", cursive;
+    font: 15px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+header {
+    color: white;
+    padding: 50px;
+    background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
+}
+header h1 {
+    font-size: 40px;
+    letter-spacing: 15px;
+    color: black;
+    /* text-shadow: 0 0 10px #0c0c0c, 0 0 25px #646c5f, 1px 1px 30px #4f5855; */
+}
+#game-start {
+    margin-top: 80px;
+}
+#game-start img {
+    max-width: 50px;
+}
+#level-option,
+#time-option {
+    margin: 10px;
+    font-size: 25px;
+    padding: 10px 45px;
+    border-radius: 5px;
+}
+option {
+    text-align: left;
+    padding: 10px;
+    background-color: white;
+    color: black;
+}
+select option:hover{
+    background-color: cadetblue;
+    color: white;
+  }
+#btn-start-game,
+#btn-game-again,
+#btn-quit-game {
+    padding: 10px 45px;
+    margin: 20px;
+    background-color: #dfdfdf;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+#btn-start-game:hover,
+#btn-game-again:hover,
+#btn-quit-game:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
+}
+
+#game-in {
+    display: none;
+    height: 100vh;
+    width: 100vw;
+}
+#game-in .game-left {
+    display: grid;
+    background-color: black;
+    color: white;
+    /* background: linear-gradient(to top, #b2c8a2, #98b28f, #b2c8a2); */
+    text-align: center;
+    flex: 15%;
+
+    max-height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#game-in .step,
+#game-in .time {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#game-in .game-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+text-align: center;
+    flex: 0 0 85%;
+}
+#game-in .memory-card {
+    display: grid;
+    gap: 10px;
+    perspective: 1000px;
+    justify-items: center;
+}
+
+.card-img {
+    position: relative;
+    width: 120px;
+    /* height: 100px; */
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: 0.7s;
+    object-fit: cover;
+}
+#game-in .card-img:active {
+    transform: scale(0.97);
+    transition: transform 0.2;
+}
+
+#game-in .card-img.flip {
+    transform: rotateY(180deg);
+}
+.card-front,
+.card-back {
+    border-radius: 15px;
+    position: absolute;
+    max-width: 100%;
+    left: 0;
+    top: 0;
+    backface-visibility: hidden;
+}
+#game-in .card-img .card-front {
+    transform: rotateY(180deg);
+}
+
+#game-end {
+    justify-content: space-around;
+    align-items: center;
+    display: none;
+    height: 100vh;
+    width: 100%;
+}
+
+#game-end h2 {
+    color: red;
+    font-size: 80px;
+}
+/* footer{
+    padding: 20px;
+    background: linear-gradient(to right,#b2c8a2,#98b28f,#6b8375);
+} */
